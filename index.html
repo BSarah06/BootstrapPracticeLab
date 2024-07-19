@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #ff6347; /* Tomato color */
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .jumbotron {
+            background: url('https://via.placeholder.com/1200x400?text=Delicious+Recipes') no-repeat center center;
+            background-size: cover;
+            color: white;
+        }
+        .jumbotron h1, .jumbotron p {
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 10px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">RecipeBook</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#recipes">Recipes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="jumbotron text-center">
+    <div class="container">
+        <h1 class="display-4">Welcome to RecipeBook</h1>
+        <p class="lead">Find the best recipes for every occasion.</p>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container my-5">
+    <h2 class="text-center">About Us</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="https://img.freepik.com/premium-vector/cookbook-icon-consept-recipe-book_946691-1333.jpg?w=1060" class="img-fluid rounded-circle" alt="About Us">
+        </div>
+        <div class="col-md-8">
+            <p>Hello! We are passionate about cooking and sharing delicious recipes with everyone. Our goal is to provide easy-to-follow recipes that you can enjoy with your family and friends.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Recipes Section -->
+<section id="recipes" class="container my-5">
+    <h2 class="text-center">Popular Recipes</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Classic-spaghetti-carbonara.jpg" class="card-img-top" alt="Spaghetti Carbonara">
+                <div class="card-body">
+                    <h5 class="card-title">Spaghetti Carbonara</h5>
+                    <p class="card-text">A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/673858790/photo/butter-chicken-curry-with-tender-chicken-breast-cream-butter-honey.jpg?s=1024x1024&w=is&k=20&c=o_y1qLvkh8uDdxKQBtKeUbpimK5eqx6OsjZxQrbtr0k=" class="card-img-top" alt="Chicken Curry">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken Curry</h5>
+                    <p class="card-text">A flavorful dish made with tender chicken pieces cooked in a spicy curry sauce.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/1370520449/photo/slice-of-chocolate-cake-with-glaze.jpg?s=1024x1024&w=is&k=20&c=bJfEJGn76XIw13A1fKRYKywbVvQ8th5Ece8TwuU6m18=" class="card-img-top" alt="Chocolate Cake">
+                <div class="card-body">
+                    <h5 class="card-title">Chocolate Cake</h5>
+                    <p class="card-text">A rich and moist chocolate cake perfect for dessert or any special occasion.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="container my-5">
+    <h2>Contact Us</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <p>&copy; 2024 RecipeBook. All Rights Reserved.</p>
+    <div>
+        <a href="#" class="mx-2">Facebook</a>
+        <a href="#" class="mx-2">Twitter</a>
+        <a href="#" class="mx-2">Instagram</a>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
